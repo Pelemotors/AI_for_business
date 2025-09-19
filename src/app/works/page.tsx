@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import NextImage from 'next/image'
 import { Image, Code, Music, BookOpen, Star, Quote, ExternalLink } from 'lucide-react'
 
 export default function WorksPage() {
@@ -101,10 +102,33 @@ export default function WorksPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-600 max-w-3xl mx-auto mb-8"
           >
             דוגמאות לעבודות מדהימות שיצרו התלמידים שלנו
           </motion.p>
+
+          {/* GIF של תלמידים לומדים */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-12"
+          >
+            <div className="relative max-w-2xl mx-auto">
+              <NextImage
+                src="/images/students-learning.gif"
+                alt="תלמידים יוצרים פרויקטים מדהימים"
+                width={500}
+                height={250}
+                className="rounded-xl shadow-lg border-2 border-accent-200"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent-500/20 to-transparent rounded-xl"></div>
+              <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full">
+                <p className="text-xs font-medium text-gray-700">התהליך שמביא לתוצאות</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
