@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import Image from 'next/image'
 import { PenTool, Palette, Code, ArrowLeft } from 'lucide-react'
 
 export default function HomePage() {
@@ -62,7 +61,6 @@ export default function HomePage() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="mb-8"
             >
               <Link
                 href="/contact"
@@ -71,29 +69,6 @@ export default function HomePage() {
                 שיעור ניסיון חינם 🎁
                 <ArrowLeft className="mr-2" size={24} />
               </Link>
-            </motion.div>
-
-            {/* GIF של תלמידים לומדים */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-8"
-            >
-              <div className="relative max-w-4xl mx-auto">
-                <Image
-                  src="/images/students-learning.gif"
-                  alt="תלמידים לומדים עם מחשבים - קורס AI לנוער"
-                  width={800}
-                  height={400}
-                  className="rounded-2xl shadow-2xl border-4 border-white/20"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-                <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <p className="text-sm font-semibold text-gray-800">כך זה נראה אצלנו! 🚀</p>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
