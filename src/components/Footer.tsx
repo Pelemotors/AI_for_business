@@ -1,85 +1,75 @@
 import Link from 'next/link'
-import { Phone, Mail, MessageCircle } from 'lucide-react'
+import { Mail, Phone, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-ink">
+      <div className="container-max section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* מידע כללי */}
           <div>
-            <h3 className="text-2xl font-bold text-gradient mb-4">AI לנוער</h3>
-            <p className="text-gray-300 mb-4">
-              קורס חווייתי שמפתח יצירתיות, חשיבה ביקורתית ויכולות תכנות
-            </p>
-            <p className="text-gray-400 text-sm">
-              העתיד כבר כאן – תלמדו להשתמש ב-AI עכשיו!
+            <h3 className="text-white text-lg font-semibold mb-4">AI לעסקים קטנים</h3>
+            <p className="text-gray-300 text-sm">
+              מקימים דף מכירה חי, מייצרים תכנים, ומחברים טופס לידים—בזמן שיחה אחת.
             </p>
           </div>
-
-          {/* קישורים מהירים */}
+          
           <div>
-            <h4 className="text-lg font-semibold mb-4">קישורים מהירים</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/learn" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  מה לומדים
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  על המרצה
-                </Link>
-              </li>
-              <li>
-                <Link href="/why" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  למה זה חשוב
-                </Link>
-              </li>
-              <li>
-                <Link href="/works" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  תוצרים
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* פרטי התקשרות */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">צור קשר</h4>
-            <div className="space-y-3">
-              <a
-                href="tel:+972504650155"
-                className="flex items-center text-gray-300 hover:text-primary-400 transition-colors"
+            <h4 className="text-white text-md font-semibold mb-4">צור קשר</h4>
+            <div className="space-y-2">
+              <a 
+                href="mailto:info@ai-small-business.com" 
+                className="flex items-center text-gray-300 hover:text-white transition-colors text-sm"
               >
-                <Phone size={18} className="ml-2" />
-                050-465-0155
+                <Mail className="h-4 w-4 mr-2" />
+                info@ai-small-business.com
               </a>
-              <a
-                href="mailto:galsamama@gmail.com"
-                className="flex items-center text-gray-300 hover:text-primary-400 transition-colors"
+              <a 
+                href="tel:+972501234567" 
+                className="flex items-center text-gray-300 hover:text-white transition-colors text-sm"
               >
-                <Mail size={18} className="ml-2" />
-                galsamama@gmail.com
+                <Phone className="h-4 w-4 mr-2" />
+                050-123-4567
               </a>
-              <a
-                href="https://wa.me/972504650155?text=שלום, אני מתעניין בחוג AI לנוער"
+              <a 
+                href="https://wa.me/972501234567?text=שלום, ראיתי את האתר שלכם ומעניין אותי ליווי AI לעסק שלי"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-300 hover:text-primary-400 transition-colors"
+                className="flex items-center text-gray-300 hover:text-white transition-colors text-sm"
               >
-                <MessageCircle size={18} className="ml-2" />
+                <MessageCircle className="h-4 w-4 mr-2" />
                 WhatsApp
               </a>
             </div>
           </div>
+          
+          <div>
+            <h4 className="text-white text-md font-semibold mb-4">קישורים</h4>
+            <div className="space-y-2">
+              <Link href="/value" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                מה AI עושה
+              </Link>
+              <Link href="/demos" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                הדגמות
+              </Link>
+              <Link href="/plans" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                חבילות
+              </Link>
+              <Link href="/contact" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                צור קשר
+              </Link>
+            </div>
+          </div>
         </div>
-
-        {/* קו תחתון */}
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 AI לנוער. כל הזכויות שמורות.
-          </p>
+        
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © 2024 AI לעסקים קטנים. כל הזכויות שמורות.
+            </p>
+            <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
+              מדיניות פרטיות
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
