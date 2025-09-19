@@ -1,116 +1,99 @@
-# AI for Business - אתר קורס AI לעסקים
+# AI לעסקים קטנים
 
-אתר מקצועי ומודרני לקורס AI לעסקים קטנים ובינוניים, עם עיצוב מושך ואנימציות מתקדמות.
+אתר מכירות מקצועי לעסקים קטנים המעוניינים להטמיע AI בעסק שלהם.
 
-## 🚀 התחלה מהירה
+## טכנולוגיות
 
-### דרישות מוקדמות
-- Node.js 18+ 
-- npm או yarn
+- **Next.js 14** - React Framework עם App Router
+- **TypeScript** - Type Safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - אנימציות
+- **Lucide React** - אייקונים
+- **Vercel Analytics** - אנליטיקות
 
-### התקנה והפעלה
+## התקנה
 
-1. **התקנת חבילות**
+1. התקנת dependencies:
 ```bash
 npm install
 ```
 
-2. **הפעלת השרת המקומי**
+2. הרצת הפרויקט בפיתוח:
 ```bash
 npm run dev
 ```
 
-3. **פתיחת האתר**
-פתחו את הדפדפן וגשו לכתובת: `http://localhost:3000`
+3. בניית הפרויקט לפרודקשן:
+```bash
+npm run build
+```
 
-## 📁 מבנה הפרויקט
+4. הרצת הפרויקט בפרודקשן:
+```bash
+npm start
+```
+
+## מבנה הפרויקט
 
 ```
 src/
-├── app/                    # App Router של Next.js
-│   ├── layout.tsx         # Layout ראשי
-│   ├── page.tsx           # דף בית
-│   ├── globals.css        # עיצוב גלובלי
-│   ├── about/             # עמוד "על המרצה"
-│   ├── learn/             # עמוד "מה לומדים"
-│   ├── why/               # עמוד "למה זה חשוב"
-│   ├── works/             # עמוד "תוצרים"
-│   └── contact/           # עמוד "צור קשר"
-├── components/            # רכיבי UI
-│   ├── Header.tsx         # תפריט עליון
-│   └── Footer.tsx         # תפריט תחתון
-└── lib/                   # פונקציות עזר (עתידי)
+├── app/
+│   └── (site)/
+│       ├── layout.tsx          # Layout גלובלי
+│       ├── page.tsx            # דף בית
+│       ├── value/page.tsx      # מה AI עושה
+│       ├── demos/page.tsx      # הדגמות
+│       ├── plans/page.tsx      # חבילות
+│       ├── cases/page.tsx      # סיפורי הצלחה
+│       ├── contact/page.tsx    # צור קשר
+│       └── privacy/page.tsx    # מדיניות פרטיות
+├── components/
+│   ├── Header.tsx              # כותרת עליונה
+│   ├── Footer.tsx              # כותרת תחתונה
+│   ├── CTAButton.tsx           # כפתור CTA
+│   ├── Section.tsx             # רכיב סקשן
+│   ├── BenefitCard.tsx         # כרטיס יתרון
+│   ├── BeforeAfter.tsx         # לפני/אחרי
+│   ├── Steps.tsx               # שלבים
+│   ├── ValueCard.tsx           # כרטיס ערך
+│   ├── DemoBlocks.tsx          # בלוקי הדגמה
+│   ├── PricingTable.tsx        # טבלת תמחור
+│   └── CaseCard.tsx            # כרטיס מקרה
+└── lib/
+    └── analytics.ts            # הגדרות אנליטיקות
 ```
 
-## 🎨 עיצוב וצבעים
+## פיצ'רים
 
-### פלטת צבעים
-- **כחול חשמלי**: `#3b82f6` - צבע ראשי
-- **סגול**: `#9333ea` - צבע משני
-- **ירוק ניאון**: `#22c55e` - צבע הדגשה
-- **לבן**: `#ffffff` - רקע
+- **עיצוב רספונסיבי** - מותאם לכל המכשירים
+- **אנימציות חלקות** - עם Framer Motion
+- **SEO מותאם** - מטא-דאטה מלא לכל עמוד
+- **אנליטיקות** - Vercel Analytics מובנה
+- **נגישות** - תמיכה ב-RTL ועברית
+- **ביצועים** - אופטימיזציה מלאה
 
-### פונטים
-- **Rubik** - פונט ראשי (עברית ואנגלית)
-- **Heebo** - פונט משני (עברית)
+## פריסה ל-Vercel
 
-## 🛠 טכנולוגיות
-
-- **Next.js 15** - React framework
-- **TypeScript** - Type safety
-- **TailwindCSS** - Styling
-- **Framer Motion** - אנימציות
-- **Lucide React** - אייקונים
-- **Supabase** - מסד נתונים (עתידי)
-
-## 📱 תכונות
-
-### ✅ הושלם
-- [x] תשתית פרויקט מלאה
-- [x] דף בית עם Hero Section
-- [x] עמוד "מה לומדים"
-- [x] עמוד "על המרצה"
-- [x] עמוד "למה זה חשוב"
-- [x] עמוד "תוצרים ותלמידים"
-- [x] עמוד "צור קשר" עם טופס
-- [x] Header ו-Footer רספונסיביים
-- [x] אנימציות עם Framer Motion
-- [x] עיצוב רספונסיבי מלא
-- [x] תמיכה בעברית (RTL)
-
-### 🔄 בתהליך
-- [ ] חיבור מסד נתונים (Supabase)
-- [ ] Google Analytics
-- [ ] reCAPTCHA לטפסים
-- [ ] SEO מתקדם
-
-### 📋 תוכניות עתידיות
-- [ ] בלוג להורים
-- [ ] מערכת הרשמה מתקדמת
-- [ ] דשבורד לניהול תלמידים
-- [ ] מערכת תשלומים
-
-## 🚀 Deployment
-
-### Vercel (מומלץ)
 1. העלו את הקוד ל-GitHub
-2. חיברו את ה-repository ל-Vercel
-3. הגדירו Environment Variables
-4. האתר יעלה אוטומטית
+2. חברו את הריפו ל-Vercel
+3. הפרויקט יועלה אוטומטית
 
-### Environment Variables נדרשים
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
-NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_id
-```
+## התאמה אישית
 
-## 📞 תמיכה
+### צבעים
+עדכנו את הצבעים ב-`tailwind.config.js`:
+- `electricBlue: '#2563eb'`
+- `deepPurple: '#7c3aed'`
+- `ink: '#0f172a'`
+- `slate: '#475569'`
+- `mint: '#22c55e'`
 
-לשאלות או בעיות:
-- 📧 Email: info@ai-lanoar.co.il
-- 📱 WhatsApp: 050-123-4567
+### תוכן
+עדכנו את הטקסטים בכל עמוד לפי הצרכים שלכם.
 
-## 📄 רישיון
+### קישורים
+עדכנו את מספר הטלפון והמייל ב-`Footer.tsx` ו-`contact/page.tsx`.
 
-כל הזכויות שמורות © 2024 AI לנוער
+## רישיון
+
+MIT License
