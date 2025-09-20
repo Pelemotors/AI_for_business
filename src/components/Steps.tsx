@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Book, Rocket, Gauge, LucideIcon } from 'lucide-react'
 
