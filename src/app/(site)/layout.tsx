@@ -16,9 +16,9 @@ const rubik = Rubik({
 })
 
 export const metadata: Metadata = {
-  title: 'AI לעסקים קטנים – אתר, תוכן ואוטומציות ביום אחד',
-  description: 'מדריכים פשוטים ומעשיים לשימוש בבינה מלאכותית בעסק. למדו לבנות אתרים, ליצור תוכן ולהפעיל אוטומציות עם AI – בעברית ובגובה העיניים.',
-  keywords: 'AI, בינה מלאכותית, עסקים קטנים, אתר, תוכן, אוטומציה, GPT, Next.js, ChatGPT, שיווק דיגיטלי',
+  title: 'AI לעסקים קטנים – למדו להשתמש בבינה מלאכותית בעסק | ChatGPT בעברית',
+  description: 'סדנאות והדרכות מעשיות לשימוש בבינה מלאכותית בעסקים קטנים. למדו ChatGPT, כלי AI ואוטומציה לעסק. בעברית פשוטה, בגובה העיניים.',
+  keywords: 'ChatGPT, בינה מלאכותית, AI לעסקים קטנים, כלי AI, אוטומציה לעסקים, בינה מלאכותית בעברית, סדנת AI, ליווי AI, GPT לעסקים',
   authors: [{ name: 'AI לעסקים קטנים' }],
   robots: 'index, follow',
   // הוסף כאן את קוד Google Search Console Verification לאחר הרשמה
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   //   google: 'YOUR_VERIFICATION_CODE_HERE',
   // },
   openGraph: {
-    title: 'AI לעסקים קטנים – אתר, תוכן ואוטומציות ביום אחד',
-    description: 'מדריכים פשוטים ומעשיים לשימוש בבינה מלאכותית בעסק. למדו לבנות אתרים, ליצור תוכן ולהפעיל אוטומציות עם AI.',
+    title: 'AI לעסקים קטנים – סדנאות ChatGPT ובינה מלאכותית',
+    description: 'למדו להשתמש בכלי AI בעסק שלכם - סדנאות מעשיות בעברית. מדריכים על ChatGPT, אוטומציה וכלי AI לעסקים קטנים.',
     type: 'website',
     locale: 'he_IL',
     url: 'https://ai-for-business-one.vercel.app',

@@ -1,7 +1,19 @@
 'use client'
 
+import type { Metadata } from 'next'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+
+export const metadata: Metadata = {
+  title: 'צור קשר – ייעוץ וליווי בבינה מלאכותית לעסקים קטנים',
+  description: 'קבלו ייעוץ מקצועי בשימוש ב-ChatGPT, כלי AI ואוטומציה לעסק שלכם. שיחת אבחון חינם. ליווי אישי בעברית.',
+  keywords: 'ייעוץ AI, ליווי בינה מלאכותית, ChatGPT לעסק, שיחת ייעוץ חינם',
+  openGraph: {
+    title: 'צור קשר – ייעוץ AI לעסקים קטנים',
+    description: 'קבלו ליווי ולמידה אישית בשימוש בבינה מלאכותית לעסק שלכם',
+    url: 'https://ai-for-business-one.vercel.app/contact',
+  }
+}
 import { Mail, Phone, MessageCircle, Send, Facebook, Instagram, Linkedin, Check } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import Section from '@/components/Section'

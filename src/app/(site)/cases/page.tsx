@@ -44,10 +44,10 @@ export default function CasesPage() {
       <section className="bg-gradient-to-br from-electricBlue/5 to-deepPurple/5 section-padding">
         <div className="container-max text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-ink mb-6">
-            סיפורי הצלחה
+            איך עסקים קטנים בישראל משתמשים בבינה מלאכותית לחיסכון בזמן והגדלת הכנסות
           </h1>
           <p className="text-xl text-slate max-w-3xl mx-auto leading-relaxed">
-            מדברים תוצאות. כמה דוגמאות אמיתיות:
+            סיפורי הצלחה אמיתיים של עסקים שהשתמשו ב-ChatGPT וכלי AI
           </p>
         </div>
       </section>
