@@ -17,14 +17,24 @@ const rubik = Rubik({
 
 export const metadata: Metadata = {
   title: 'AI לעסקים קטנים – אתר, תוכן ואוטומציות ביום אחד',
-  description: 'מקימים דף מכירה חי ב־Next.js ומחברים טפסים ו־WhatsApp—בזמן שיחה אחת.',
-  keywords: 'AI, עסקים קטנים, אתר, תוכן, אוטומציה, GPT, Next.js',
+  description: 'מדריכים פשוטים ומעשיים לשימוש בבינה מלאכותית בעסק. למדו לבנות אתרים, ליצור תוכן ולהפעיל אוטומציות עם AI – בעברית ובגובה העיניים.',
+  keywords: 'AI, בינה מלאכותית, עסקים קטנים, אתר, תוכן, אוטומציה, GPT, Next.js, ChatGPT, שיווק דיגיטלי',
   authors: [{ name: 'AI לעסקים קטנים' }],
+  robots: 'index, follow',
+  // הוסף כאן את קוד Google Search Console Verification לאחר הרשמה
+  // verification: {
+  //   google: 'YOUR_VERIFICATION_CODE_HERE',
+  // },
   openGraph: {
     title: 'AI לעסקים קטנים – אתר, תוכן ואוטומציות ביום אחד',
-    description: 'מקימים דף מכירה חי ב־Next.js ומחברים טפסים ו־WhatsApp—בזמן שיחה אחת.',
+    description: 'מדריכים פשוטים ומעשיים לשימוש בבינה מלאכותית בעסק. למדו לבנות אתרים, ליצור תוכן ולהפעיל אוטומציות עם AI.',
     type: 'website',
     locale: 'he_IL',
+    url: 'https://ai-for-business-one.vercel.app',
+    siteName: 'AI לעסקים קטנים',
+  },
+  alternates: {
+    canonical: 'https://ai-for-business-one.vercel.app',
   },
 }
 
