@@ -72,8 +72,13 @@ export default function ValuePage() {
           <p className="text-xl mb-8 text-blue-100">
             בקשו ערכת פרומפטים מותאמת לעסק שלכם
           </p>
-          <CTAButton href="/contact" variant="secondary" className="text-lg px-8 py-4">
-            קבעו שיחת אבחון חינם
+          <CTAButton 
+            href="https://wa.me/972504650155?text=היי אני מעוניין/ת בערכת פרומפטים מותאמת לעסק שלי" 
+            variant="secondary" 
+            className="text-lg px-8 py-4"
+            target="_blank"
+          >
+            בקשו ערכת פרומפטים מותאמת לעסק שלכם
           </CTAButton>
         </div>
       </section>
