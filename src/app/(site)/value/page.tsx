@@ -70,7 +70,7 @@ export default function ValuePage() {
             מוכנים להתחיל?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            בקשו ערכת פרומפטים מותאמת לעסק שלכם
+            קבלו ערכת פרומפטים מותאמת אישית לעסק שלכם - חינם!
           </p>
           <CTAButton 
             href="https://wa.me/972504650155?text=היי אני מעוניין/ת בערכת פרומפטים מותאמת לעסק שלי" 
