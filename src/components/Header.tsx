@@ -9,7 +9,7 @@ const navigation = [
   { name: 'מה AI עושה', href: '/value' },
   { name: 'הדגמות', href: '/demos' },
   { name: 'חבילות', href: '/plans' },
-  { name: 'מדריכים', href: '/blog' },
+  { name: 'מאמרים', href: '/blog' },
   { name: 'סיפורי הצלחה', href: '/cases' },
   { name: 'צור קשר', href: '/contact' },
 ]
