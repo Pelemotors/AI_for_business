@@ -69,9 +69,13 @@ export default function ValuePage() {
           <h2 className="text-3xl font-bold mb-4">
             מוכנים להתחיל?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <a 
+            href="https://wa.me/972504650155?text=היי אני מעוניין/ת בערכת פרומפטים מותאמת לעסק שלי"
+            target="_blank"
+            className="text-xl mb-8 text-blue-100 hover:text-white transition-colors cursor-pointer block"
+          >
             קבלו ערכת פרומפטים מותאמת אישית לעסק שלכם - חינם!
-          </p>
+          </a>
           <CTAButton 
             href="https://wa.me/972504650155?text=היי אני מעוניין/ת בערכת פרומפטים מותאמת לעסק שלי" 
             variant="secondary" 
