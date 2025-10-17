@@ -6,10 +6,43 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Home } from 'lucide-react'
 import CTAButton from '@/components/CTAButton'
 import { getArticleById, getNextArticle, getPreviousArticle } from '@/lib/articles'
+import { use, useEffect } from 'react'
 
 interface ArticlePageProps {
   params: {
     id: string
+  }
+}
+
+// פונקציה לעדכון metadata דינמית בצד הלקוח
+function updateMetaTags(article: any) {
+  if (typeof window === 'undefined') return
+  
+  // עדכון title
+  document.title = `${article.title} | AI לעסקים קטנים`
+  
+  // עדכון description
+  let metaDesc = document.querySelector('meta[name="description"]')
+  if (metaDesc) {
+    metaDesc.setAttribute('content', article.excerpt)
+  }
+  
+  // עדכון og:title
+  let ogTitle = document.querySelector('meta[property="og:title"]')
+  if (ogTitle) {
+    ogTitle.setAttribute('content', article.title)
+  }
+  
+  // עדכון og:description
+  let ogDesc = document.querySelector('meta[property="og:description"]')
+  if (ogDesc) {
+    ogDesc.setAttribute('content', article.excerpt)
+  }
+  
+  // עדכון canonical
+  let canonical = document.querySelector('link[rel="canonical"]')
+  if (canonical) {
+    canonical.setAttribute('href', `https://ai-for-business-one.vercel.app/blog/${article.id}`)
   }
 }
 
@@ -180,9 +213,49 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
   const nextArticle = getNextArticle(articleId)
   const previousArticle = getPreviousArticle(articleId)
+  
+  // עדכון metadata בעת טעינת הקומפוננטה
+  useEffect(() => {
+    if (article) {
+      updateMetaTags(article)
+    }
+  }, [article])
+
+  // JSON-LD structured data למאמר
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.excerpt,
+    author: {
+      '@type': 'Person',
+      name: 'AI לעסקים קטנים',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI לעסקים קטנים',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://ai-for-business-one.vercel.app/images/logo.png',
+      }
+    },
+    datePublished: '2025-01-15',
+    dateModified: '2025-01-15',
+    url: `https://ai-for-business-one.vercel.app/blog/${article.id}`,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://ai-for-business-one.vercel.app/blog/${article.id}`,
+    },
+  }
 
   return (
     <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-electricBlue/5 to-deepPurple/5 section-padding">
         <div className="container-max">

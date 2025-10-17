@@ -16,8 +16,8 @@ const rubik = Rubik({
 })
 
 export const metadata: Metadata = {
-  title: 'AI לעסקים קטנים – למדו להשתמש בבינה מלאכותית בעסק | ChatGPT בעברית',
-  description: 'סדנאות והדרכות מעשיות לשימוש בבינה מלאכותית בעסקים קטנים. למדו ChatGPT, כלי AI ואוטומציה לעסק. בעברית פשוטה, בגובה העיניים.',
+  title: 'AI לעסקים קטנים – סדנאות וכלים לבעלי עסקים | ChatGPT בעברית',
+  description: 'למדו לנהל עסק עם בינה מלאכותית בעזרת סדנאות, ליווי אישי וכלים בעברית פשוטה. ChatGPT, אוטומציה ושיווק דיגיטלי לעסקים קטנים.',
   keywords: 'ChatGPT, בינה מלאכותית, AI לעסקים קטנים, כלי AI, אוטומציה לעסקים, בינה מלאכותית בעברית, סדנת AI, ליווי AI, GPT לעסקים',
   authors: [{ name: 'AI לעסקים קטנים' }],
   robots: 'index, follow',
@@ -26,12 +26,24 @@ export const metadata: Metadata = {
   //   google: 'YOUR_VERIFICATION_CODE_HERE',
   // },
   openGraph: {
-    title: 'AI לעסקים קטנים – סדנאות ChatGPT ובינה מלאכותית',
-    description: 'למדו להשתמש בכלי AI בעסק שלכם - סדנאות מעשיות בעברית. מדריכים על ChatGPT, אוטומציה וכלי AI לעסקים קטנים.',
+    title: 'AI לעסקים קטנים – סדנאות וכלים לבעלי עסקים',
+    description: 'למדו לנהל עסק עם בינה מלאכותית בעזרת סדנאות, ליווי אישי וכלים בעברית פשוטה',
     type: 'website',
     locale: 'he_IL',
     url: 'https://ai-for-business-one.vercel.app',
     siteName: 'AI לעסקים קטנים',
+    images: [{
+      url: 'https://ai-for-business-one.vercel.app/images/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'AI לעסקים קטנים - סדנאות ובינה מלאכותית',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI לעסקים קטנים – סדנאות וכלים לבעלי עסקים',
+    description: 'למדו לנהל עסק עם בינה מלאכותית בעזרת סדנאות, ליווי אישי וכלים בעברית פשוטה',
+    images: ['https://ai-for-business-one.vercel.app/images/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://ai-for-business-one.vercel.app',
