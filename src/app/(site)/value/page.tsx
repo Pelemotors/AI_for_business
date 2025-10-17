@@ -75,7 +75,7 @@ export default function ValuePage() {
           <CTAButton 
             href="https://wa.me/972504650155?text=היי אני מעוניין/ת בערכת פרומפטים מותאמת לעסק שלי" 
             variant="primary" 
-            className="text-xl px-10 py-5 bg-white text-electricBlue hover:bg-gray-100 border-2 border-white shadow-lg font-bold"
+            className="text-xl px-10 py-5 bg-electricBlue text-white hover:bg-blue-600 border-2 border-white shadow-lg font-bold"
             target="_blank"
           >
             🎯 בקשו ערכת פרומפטים מותאמת לעסק שלכם
