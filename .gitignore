@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project documentation (private)
+MASTER_PLAN_BUILDING_BUSINESS_WEBSITE.md
